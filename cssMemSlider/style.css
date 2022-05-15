@@ -5,7 +5,7 @@
     font-family: 'Comfortaa', cursive;
 }
 .carousel_container {
-	width: 62vw;
+	width: 50vw;
 	height: 60vh;
 	margin: 100px auto;
 	background-color: #000;
@@ -15,19 +15,19 @@
 }
 
 .carousel {
-	width: 56vw;
+	width: 47vw;
 	height: 50vh;
 	margin: 0 auto;
 	overflow: hidden;
 }
 .carousel_slides {
-	width: 224vw;
+	width: 188vw;
 	transition: transform ease-out 0.45s;
 	display: flex;
 }
 
 .carousel_slide {
-	width: 56vw;
+	width: 47vw;
 	height: 40vh;
 	background-size: cover;
     background-repeat: no-repeat;
