@@ -48,7 +48,7 @@
   width: 15px;
   height: 15px;
   border-radius: 20px;
-  background-color: blue;
+  background-color: #8ecaf3;
   cursor: pointer;
   margin-right: 10px;
   transition: 0.5s;
@@ -60,7 +60,7 @@
 
 .carousel_indicator_active {	
 	background-color: #000;
-	border: 2px solid blue;
+	border: 2px solid #8ecaf3;
 }
 
 .carousel_indicator_active:hover {
