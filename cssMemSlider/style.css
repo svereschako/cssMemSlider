@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+.carousel_container {
+	width: 50vw;
+	height: 60vh;
+	margin: 100px auto;
+	background-color: #000;
+	padding-top: 20px;
+	border: 7px solid #f1f2f2;
+	border-radius: 5px;
+}
+
+.carousel {
+	width: 47vw;
+	height: 50vh;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.carousel_slides {
+	width: 188vw;
+	transition: transform ease-out 0.45s;
+	display: flex;
+}
+
+.carousel_slide {
+	width: 47vw;
+	height: 40vh;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.carousel_indicators {   
+  width: 100px;
+  margin: 25px 0 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel_indicator {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: blue;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.carousel_indicator:hover {
+	background-color: #fff;
+}
+
+.carousel_indicator_active {	
+	background-color: #000;
+	border: 2px solid blue;
+}
+
+.carousel_indicator_active:hover {
+	background-color: #000;
+	border: 2px solid #fff;
+}
+
+.slide_text {	
+	width: 200px;
+	margin: -28px 0 0 0;
+	color: #fff;	
+}
+
+.btn {
+	padding-bottom: 12px;
+	cursor: pointer;
+}
+
+.btn:hover .carousel_indicator {
+	background-color: #fff;
+}
+
+.btn:hover .carousel_indicator_active {
+	background-color: #000;
+	border: 2px solid #fff;
+}
+
+
+
+@media (max-width: 425px) {
+
+	.carousel_container {
+		width: 90vw;
+		height: 50vh;
+		border-left: 20px solid #f1f2f2;
+		border-right: 20px solid #f1f2f2;
+		padding-top: 15px;		
+	}
+
+	.carousel {
+		height: 45vh;
+		width: 75vw;
+	}
+
+	.carousel_slides {
+		width: 300vw;
+	}
+	
+	.carousel_slide {
+		width: 75vw;
+    	height: 30vh;
+		background-size: 75vw auto;
+	}
+
+	.carousel_indicators {
+		margin: 20px auto;
+	}
+
+	.carousel_indicator_active {	
+		background-color: #000;
+		border: 2px solid blue;
+	}
+
+	.btn {
+		padding: 0;
+	}	
+
+	.slide_text {
+		margin: 0;
+	}
+}
+
+@media (max-width: 320px) {
+
+	.carousel_container {
+		width: 97vw;
+		height: 44vh;
+		padding-top: 10px;
+		border-left: 15px solid #f1f2f2;
+		border-right: 15px solid #f1f2f2;		
+	}
+
+	.carousel {
+		width: 80vw;
+		height: 40vh;
+	}
+
+	.carousel_slides {
+		width: 340vw;
+	}
+
+	.carousel_slide {
+		width: 85vw;
+		height: 23vh;
+		background-size: 85vw auto;
+	}
+}
