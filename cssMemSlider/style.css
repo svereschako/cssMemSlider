@@ -4,6 +4,11 @@
     margin: 0;
     font-family: 'Comfortaa', cursive;
 }
+
+input[type="radio"] {
+	display: none;
+}
+
 .carousel_container {
 	width: 50vw;
 	height: 60vh;
@@ -35,6 +40,22 @@
     border-radius: 5px;
 }
 
+.carousel_slide:nth-child(1) {
+	background-image: url("./images/jingxi-lau-9G7pio_3xow-unsplash.jpg");
+}
+
+.carousel_slide:nth-child(2) {
+	background-image: url("./images/ridwan-meah-Oq0KE3CWwdo-unsplash.jpg");
+}
+
+.carousel_slide:nth-child(3) {
+	background-image: url("./images/srini-somanchi-7yLWmDkekrw-unsplash.jpg");
+}
+
+.carousel_slide:nth-child(4) {
+	background-image: url("./images/srini-somanchi-wuN_mXGXO5I-unsplash.jpg");
+}
+
 .carousel_indicators {   
   width: 100px;
   margin: 25px 0 0 auto;
@@ -48,10 +69,82 @@
   width: 15px;
   height: 15px;
   border-radius: 20px;
-  background-color: blue;
+  background-color: #8ecaf3;
   cursor: pointer;
   margin-right: 10px;
   transition: 0.5s;
+}
+
+[id="image1"]:checked ~ .carousel_slides {
+	transform: translateX(-0);
+}
+
+[id="image2"]:checked ~ .carousel_slides {
+	transform: translateX(-47vw);
+}
+
+[id="image3"]:checked ~ .carousel_slides {
+	transform: translateX(-94vw);
+}
+
+[id="image4"]:checked ~ .carousel_slides {
+	transform: translateX(-141vw);
+}
+
+[id="image1"]:checked ~ .text_container .slide_text:nth-child(1) {
+	opacity: 1;	
+}
+
+[id="image2"]:checked ~ .text_container .slide_text:nth-child(2) {
+		opacity: 1;
+}
+
+[id="image3"]:checked ~ .text_container .slide_text:nth-child(3) {	
+	opacity: 1;
+}
+
+[id="image4"]:checked ~ .text_container .slide_text:nth-child(4) {	
+	opacity: 1;
+}
+
+[id="image1"]:checked ~ .carousel_indicators [for="image1"] {
+	background-color: #000;
+	border: 2px solid #8ecaf3;	
+}
+
+[id="image1"]:checked ~ .carousel_indicators [for="image1"]:hover {
+	background-color: #000;
+	border: 2px solid #fff;	
+}
+
+[id="image2"]:checked ~ .carousel_indicators [for="image2"] {
+	background-color: #000;
+	border: 2px solid #8ecaf3;	
+}
+
+[id="image2"]:checked ~ .carousel_indicators [for="image2"]:hover {
+	background-color: #000;
+	border: 2px solid #fff;	
+}
+
+[id="image3"]:checked ~ .carousel_indicators [for="image3"] {
+	background-color: #000;
+	border: 2px solid #8ecaf3;	
+}
+
+[id="image3"]:checked ~ .carousel_indicators [for="image3"]:hover {
+	background-color: #000;
+	border: 2px solid #fff;	
+}
+
+[id="image4"]:checked ~ .carousel_indicators [for="image4"] {
+	background-color: #000;
+	border: 2px solid #8ecaf3;	
+}
+
+[id="image4"]:checked ~ .carousel_indicators [for="image4"]:hover {
+	background-color: #000;
+	border: 2px solid #fff;	
 }
 
 .carousel_indicator:hover {
@@ -60,7 +153,7 @@
 
 .carousel_indicator_active {	
 	background-color: #000;
-	border: 2px solid blue;
+	border: 2px solid #8ecaf3;
 }
 
 .carousel_indicator_active:hover {
@@ -68,10 +161,29 @@
 	border: 2px solid #fff;
 }
 
+.text_container {
+	margin-top: -15px;
+}
+
 .slide_text {	
 	width: 200px;
 	margin: -28px 0 0 0;
-	color: #fff;	
+	color: #fff;
+	opacity: 0;	
+	transition: 1s;	
+}
+
+.text_container .slide_text:nth-child(2) {
+	margin-left: -75px;
+}
+
+.text_container .slide_text:nth-child(3) {
+	margin-left: -75px;
+}
+
+.text_container .slide_text:nth-child(4) {
+	margin-left: -73px;
+
 }
 
 .btn {
@@ -107,8 +219,24 @@
 
 	.carousel_slides {
 		width: 300vw;
+	}	
+
+	[id="image1"]:checked ~ .carousel_slides {
+		transform: translateX(0);
 	}
-	
+
+	[id="image2"]:checked ~ .carousel_slides {
+		transform: translateX(-75vw);
+	}
+
+	[id="image3"]:checked ~ .carousel_slides {
+		transform: translateX(-150vw);
+	}
+
+	[id="image4"]:checked ~ .carousel_slides {
+		transform: translateX(-225vw);
+	}
+
 	.carousel_slide {
 		width: 75vw;
     	height: 30vh;
@@ -157,4 +285,21 @@
 		height: 23vh;
 		background-size: 85vw auto;
 	}
+
+	[id="image1"]:checked ~ .carousel_slides {
+		transform: translateX(0);
+	}
+
+	[id="image2"]:checked ~ .carousel_slides {
+		transform: translateX(-85vw);
+	}
+
+	[id="image3"]:checked ~ .carousel_slides {
+		transform: translateX(-170vw);
+	}
+
+	[id="image4"]:checked ~ .carousel_slides {
+		transform: translateX(-255vw);
+	}
+
 }

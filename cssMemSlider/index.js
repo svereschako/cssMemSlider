@@ -39,16 +39,6 @@ buttons.forEach(function(button,ind,arr){
 	};
 });
 
-function getShift() {
-	var shift;
-	if(window.innerWidth < 321)
-		shift = 85;
-	else if( window.innerWidth > 320 && window.innerWidth < 426)
-		shift = 75;
-	else
-		shift = 56;
-	return shift;
-}
 
 function goToSlide(index) {
 	slides.style.transform = `translateX(${-index*slidesArr[0].offsetWidth}px)`;	
