@@ -39,6 +39,7 @@ buttons.forEach(function(button,ind,arr){
 	};
 });
 
+
 function goToSlide(index) {
 	slides.style.transform = `translateX(${-index*slidesArr[0].offsetWidth}px)`;	
 }
