@@ -12,11 +12,11 @@ input[type="radio"] {
 .carousel_container {
 	width: 50vw;
 	height: 60vh;
-	margin: 100px auto;
+	margin: 15vh auto;
 	background-color: #000;
-	padding-top: 20px;
+	padding-top: 3vh;
 	border: 7px solid #f1f2f2;
-	border-radius: 5px;
+	border-radius: 2%;
 }
 
 .carousel {
@@ -37,28 +37,28 @@ input[type="radio"] {
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 5px;
+    border-radius: 1%;
 }
 
 .carousel_slide:nth-child(1) {
-	background-image: url("./images/jingxi-lau-9G7pio_3xow-unsplash.jpg");
+	background-image: url("https://images.unsplash.com/photo-1583081205988-853ce245e058?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 
 .carousel_slide:nth-child(2) {
-	background-image: url("./images/ridwan-meah-Oq0KE3CWwdo-unsplash.jpg");
+	background-image: url("https://images.unsplash.com/photo-1648073141651-c61c052d9079?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
 }
 
 .carousel_slide:nth-child(3) {
-	background-image: url("./images/srini-somanchi-7yLWmDkekrw-unsplash.jpg");
+	background-image: url("https://images.unsplash.com/photo-1650564365557-b987ac5d219e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 
 .carousel_slide:nth-child(4) {
-	background-image: url("./images/srini-somanchi-wuN_mXGXO5I-unsplash.jpg");
+	background-image: url("https://images.unsplash.com/photo-1649007694448-484379fc1452?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 
 .carousel_indicators {   
   width: 100px;
-  margin: 25px 0 0 auto;
+  margin: 4vh 0 0 auto;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -107,42 +107,42 @@ input[type="radio"] {
 	opacity: 1;
 }
 
-[id="image1"]:checked ~ .carousel_indicators [for="image1"] {
+[id="image1"]:checked ~ .carousel_indicators [for="image1"] .carousel_indicator {
 	background-color: #000;
 	border: 2px solid #8ecaf3;	
 }
 
-[id="image1"]:checked ~ .carousel_indicators [for="image1"]:hover {
+[id="image1"]:checked ~ .carousel_indicators [for="image1"]:hover .carousel_indicator {
 	background-color: #000;
 	border: 2px solid #fff;	
 }
 
-[id="image2"]:checked ~ .carousel_indicators [for="image2"] {
+[id="image2"]:checked ~ .carousel_indicators [for="image2"] .carousel_indicator {
 	background-color: #000;
 	border: 2px solid #8ecaf3;	
 }
 
-[id="image2"]:checked ~ .carousel_indicators [for="image2"]:hover {
+[id="image2"]:checked ~ .carousel_indicators [for="image2"]:hover .carousel_indicator {
 	background-color: #000;
 	border: 2px solid #fff;	
 }
 
-[id="image3"]:checked ~ .carousel_indicators [for="image3"] {
+[id="image3"]:checked ~ .carousel_indicators [for="image3"] .carousel_indicator {
 	background-color: #000;
 	border: 2px solid #8ecaf3;	
 }
 
-[id="image3"]:checked ~ .carousel_indicators [for="image3"]:hover {
+[id="image3"]:checked ~ .carousel_indicators [for="image3"]:hover .carousel_indicator {
 	background-color: #000;
 	border: 2px solid #fff;	
 }
 
-[id="image4"]:checked ~ .carousel_indicators [for="image4"] {
+[id="image4"]:checked ~ .carousel_indicators [for="image4"] .carousel_indicator {
 	background-color: #000;
 	border: 2px solid #8ecaf3;	
 }
 
-[id="image4"]:checked ~ .carousel_indicators [for="image4"]:hover {
+[id="image4"]:checked ~ .carousel_indicators [for="image4"]:hover .carousel_indicator {
 	background-color: #000;
 	border: 2px solid #fff;	
 }
@@ -162,12 +162,10 @@ input[type="radio"] {
 }
 
 .text_container {
-	margin-top: -15px;
+	margin-top: -4vh;
 }
 
 .slide_text {	
-	width: 200px;
-	margin: -28px 0 0 0;
 	color: #fff;
 	opacity: 0;	
 	transition: 1s;	
@@ -176,7 +174,6 @@ input[type="radio"] {
 .text_container .slide_text:nth-child(2) {
 	margin-left: -75px;
 }
-
 
 .text_container .slide_text:nth-child(3) {
 	margin-left: -75px;
@@ -187,6 +184,7 @@ input[type="radio"] {
 }
 
 .btn {
+	display: block;
 	padding-bottom: 12px;
 	cursor: pointer;
 }
@@ -256,8 +254,8 @@ input[type="radio"] {
 		padding: 0;
 	}	
 
-	.slide_text {
-		margin: 0;
+	.text_container {
+		margin-top: -1vh;
 	}
 }
 
