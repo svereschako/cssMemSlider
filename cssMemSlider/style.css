@@ -217,8 +217,8 @@ input[type="radio"] {
 
 	.carousel_slides {
 		width: 300vw;
-	}
-	
+	}	
+
 	[id="image1"]:checked ~ .carousel_slides {
 		transform: translateX(0);
 	}
@@ -299,4 +299,5 @@ input[type="radio"] {
 	[id="image4"]:checked ~ .carousel_slides {
 		transform: translateX(-255vw);
 	}
+
 }
