@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Slider</title>    
+  </head>
+  <body>
+    <div class="carousel_container">
+        <div class="carousel">
+            <input type="radio" id="image1" name="image" checked>
+            <input type="radio" id="image2" name="image">
+            <input type="radio" id="image3" name="image">
+            <input type="radio" id="image4" name="image">
+            <div class="carousel_slides">
+                <div class="carousel_slide"></div>
+                <div class="carousel_slide"></div>
+                <div class="carousel_slide"></div>
+                <div class="carousel_slide"></div>
+            </div>            
+            <ul class="carousel_indicators">
+                <li><label class="btn" for="image1"><span class="carousel_indicator"></span></label></li>
+                <li><label class="btn" for="image2"><span class="carousel_indicator"></span></label></li>
+                <li><label class="btn" for="image3"><span class="carousel_indicator"></span></label></li>
+                <li><label class="btn" for="image4"><span class="carousel_indicator"></span></label></li>
+            </ul>
+            <div class="text_container">
+                <span class="slide_text">Picture 1</span>
+                <span class="slide_text">Picture 2</span>
+                <span class="slide_text">Picture 3</span>
+                <span class="slide_text">Picture 4</span>
+            </div>
+        </div>
+    </div>               
+  </body>
+</html>
