@@ -57,7 +57,7 @@ input[type="radio"] {
 }
 
 .carousel_indicators {   
-  width: 100px;
+  width: 6em;
   margin: 4vh 0 0 auto;
   list-style-type: none;
   display: flex;
@@ -180,13 +180,12 @@ input[type="radio"] {
 }
 
 .text_container .slide_text:nth-child(4) {
-	margin-left: -73px;
-
+	margin-left: -75px;
 }
 
 .btn {
 	display: block;
-	padding-bottom: 12px;
+	padding-bottom: 1em;
 	cursor: pointer;
 }
 
@@ -206,9 +205,9 @@ input[type="radio"] {
 	.carousel_container {
 		width: 90vw;
 		height: 50vh;
-		border-left: 20px solid #f1f2f2;
-		border-right: 20px solid #f1f2f2;
-		padding-top: 15px;		
+		border-left: 5vw solid #f1f2f2;
+		border-right: 5vw solid #f1f2f2;
+		padding-top: 1em;		
 	}
 
 	.carousel {
@@ -243,7 +242,7 @@ input[type="radio"] {
 	}
 
 	.carousel_indicators {
-		margin: 20px auto;
+		margin: 1em auto;
 	}
 
 	.carousel_indicator_active {	
@@ -265,9 +264,9 @@ input[type="radio"] {
 	.carousel_container {
 		width: 97vw;
 		height: 44vh;
-		padding-top: 10px;
-		border-left: 15px solid #f1f2f2;
-		border-right: 15px solid #f1f2f2;		
+		padding-top: 1em;
+		border-left: 1em solid #f1f2f2;
+		border-right: 1em solid #f1f2f2;		
 	}
 
 	.carousel {
